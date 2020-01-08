@@ -1,0 +1,13 @@
+<!-- 第一个区域：视频播放器 -->
+<video id='myVideo' controls src='{{src}}' autoplay="true"></video>
+<!-- 第二个区域：弹幕区域 -->
+<view class="tips">
+  <text>部分播放源可能加载速度较慢</text>
+</view>
+<!-- 第三个区域：视频列表 -->
+<view class='videoList'>
+  <view class="{{currentVideoBar==item.id?'videoBar_light':'videoBar'}}" wx:for='{{list}}' data-url='{{item.videoUrl}}' data-id="{{item.id}}" bindtap='playVideo'>
+    <image src="{{currentVideoBar==item.id?'/images/button-play-light.png':'/images/button-play.png'}}"></image>
+    <text class="{{currentVideoBar==item.id?'body_light':'body'}}">{{item.title}}</text>
+  </view>
+</view>

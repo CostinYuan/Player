@@ -1,0 +1,51 @@
+video{
+  width: 100%;
+}
+.tips{
+  font-size: x-small;
+  color: grey;
+  text-align: center;
+}
+.videoList{
+  width: 100%;
+  min-height: 400rpx;/*最小高度*/
+}
+.videoBar{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #13227a;
+  margin: 8rpx;/*外边距*/
+}
+.videoBar_light{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  background-color: #13227a;
+  margin: 8rpx;/*外边距*/
+}
+.body{
+  font-size: normal;
+  color: #13227a;
+  margin: 20rpx;
+  flex-grow: 1;/*扩张多余宽度*/
+}
+.body_light{
+  font-size: normal;
+  color: #ffffff;
+  margin: 20rpx;
+  flex-grow: 1;/*扩张多余宽度*/
+}
+image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+.click{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #13227a;
+  margin: 8rpx;/*外边距*/
+  color: solid #13227a
+}
